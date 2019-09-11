@@ -1,0 +1,12 @@
+# Queries
+
+type Query {
+  info: String!
+}
+
+# Mutations
+
+type Mutation {
+  echo(word: String): String!
+}
+
