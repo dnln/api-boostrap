@@ -1,7 +1,8 @@
 {
-    "delay": "100ms",
-    "execMap": {
-      "ts": "ts-node"
-    },
-    "watch": ["src/"]
-  }
+  "delay": "100ms",
+  "execMap": {
+    "ts": "ts-node"
+  },
+  "watch": ["src/"],
+  "ext": "graphql,ts"
+}

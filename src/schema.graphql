@@ -1,12 +1,33 @@
 # Queries
 
 type Query {
-  info: String!
+  user: UserResponse!
 }
 
 # Mutations
 
 type Mutation {
-  echo(word: String): String!
+  signUp(email: String, password: String): SignUpResponse!
+  signIn(email: String, password: String): SignInResponse!
 }
 
+type UserResponse {
+  error: String
+  name: String
+}
+
+type SignUpResponse {
+  error: String
+  user: User
+  jwt: String
+}
+
+type SignInResponse {
+  error: String
+  user: User
+  jwt: String
+}
+
+type User {
+  name: String
+}
